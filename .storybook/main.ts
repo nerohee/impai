@@ -30,6 +30,15 @@ const config: StorybookConfig = {
   core: {
     disableTelemetry: true,
   },
+  // Storybook reuses vite.config.ts, whose vite-plugin-dts rolls up the library's .d.ts
+  // from dist/. On a clean CI checkout dist/ does not exist, so the preview build fails.
+  // Type declarations are irrelevant to the Storybook site — drop the plugin here.
+  viteFinal: async (config) => {
+    config.plugins = (config.plugins ?? [])
+      .flat()
+      .filter((p) => !(p && typeof p === 'object' && 'name' in p && String(p.name).startsWith('vite:dts')));
+    return config;
+  },
 };
 
 export default config;
