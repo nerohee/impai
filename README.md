@@ -5,7 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/react-impai.svg)](https://www.npmjs.com/package/react-impai)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/react-impai)](https://bundlephobia.com/package/react-impai)
 [![license](https://img.shields.io/npm/l/react-impai.svg)](./LICENSE)
-[![CI](https://github.com/khs990704/impai/actions/workflows/ci.yml/badge.svg)](https://github.com/khs990704/impai/actions/workflows/ci.yml)
+[![CI](https://github.com/nerohee/impai/actions/workflows/ci.yml/badge.svg)](https://github.com/nerohee/impai/actions/workflows/ci.yml)
 
 `react-impai` provides production-ready, accessible, headless React components for AI features — chat, summarisation, and more — backed by pluggable adapters for OpenAI and locally hosted models (Ollama). Streaming, cancellation, persistence, and a11y are handled for you. Visual styling is yours.
 
